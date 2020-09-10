@@ -1,0 +1,194 @@
+*{
+	
+	font-family: century gothic;
+}
+
+.main{
+	width: 1440px;
+	height: 4352px;
+
+	
+}
+
+.navbar{
+	width: 1440px;
+	height: 800px;
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("images/hero.png");
+
+}
+
+.logo{
+float: left;
+margin-left: 60px;
+margin-top: 60px;
+
+}
+
+
+.header{
+	height: 60px;
+	width: 1440px;
+	/*background-color: #344F4B;*/
+}
+
+
+.header ul{
+	list-style: none;
+	float: right;
+	margin-top: 60px;
+	margin-right: 55px;
+
+	}
+
+
+.header ul li{
+	display: inline-block;
+}
+
+
+.header ul li a{
+	text-decoration:none;
+	color:#ffffff;
+	font-size: 17px;
+	padding: 5px 20px;
+	transition: 0.6s ease;
+}
+
+.header ul li a:hover{
+background-color:#E9967A;
+color:#ffffff;
+
+}
+
+.header ul img{
+	margin-top:15px;
+	margin-left: 40px;
+}
+
+.header ul li.active a{
+background-color:#E9967A;
+}
+
+
+ .ninja h1{
+	width: 922px;
+ 	height: 96px;
+	color:#ffffff;
+	text-align: center;
+	font-size: 70px;
+	font-weight: bold;
+	margin:250px 259px 0px;
+	
+}
+
+.ninja p{
+	width: 624px;
+  	height: 84px;
+  	margin:10px 409px 0px 407px;
+  	text-align: center;
+  	color:#ffffff;
+
+  }
+
+/*@keyframes glowing {
+        0% {
+          background-color: #2ba805;
+          box-shadow: 0 0 5px #2ba805;
+        }
+        50% {
+          background-color: #49e819;
+          box-shadow: 0 0 20px #49e819;
+        }
+        100% {
+          background-color: #2ba805;
+          box-shadow: 0 0 5px #2ba805;
+        }
+      }
+      */
+
+.button{
+	width: 192px;
+  	height: 30px;
+	background-color: #4CAF50;
+  	color: white;
+  	padding: 15px 32px;
+  	text-align: center;
+  	border-radius: 4px;
+  	box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.9);
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 18px;
+  	margin: 50px 611px 0px 637px;
+  	cursor: pointer;
+  	text-transform: uppercase;
+  	/*animation: glowing 1300ms infinite;*/
+}
+
+.button img{
+	margin-left: 8px;
+	margin-top: 5px;
+}
+
+h1.question{
+	text-align: center;
+	color:#000;
+	font-size: 40px;
+	letter-spacing: normal;
+	margin-top:80px;
+}
+
+.column {
+  float: left;
+  padding-top: 45px;
+  padding-left: 80px;
+  padding-right: 80px;
+
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+  
+}
+
+.column h3{
+	color:#0EA007;
+	text-align: center;
+}
+
+.column p{
+	width: 300px;
+	height: 88px;
+	text-align: center;
+}
+
+.left{
+	float: left;
+}
+
+.left ul li{
+	list-style: none;
+	display: block;
+	}
+
+
+.right ul li{
+	display: block;
+	list-style: none;
+}
+
+.right{
+	float:right;
+}
+
+
+
+.third{
+	margin-top: 100px;
+	margin-left: 80px;
+	margin-right: 60px;
+}
+
