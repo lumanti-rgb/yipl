@@ -240,7 +240,7 @@ font-size: 13px;
 } 
   
  .ic-separator-frontend-ninja h1:before,  
- h1:after { 
+ .ic-separator-frontend-ninja h1:after { 
 	content: ""; 
 	flex: 1 1; 
 	border-bottom: 1px solid green;
@@ -252,5 +252,88 @@ font-size: 13px;
 	text-align: center;
 	margin-left: 50px;
 	margin-right: 50px;
+}
+
+#heading-like h1{
+	text-align: center;
+	color:#9b9b9b;
+	margin-top:85px;
+	margin-bottom: 0px;
+}
+
+#heading-like p{
+	text-align:center;
+	font-style: italic;
+	font-size: 14px;
+	color:#9b9b9b;
+	margin-bottom: 30px;
+}
+
+
+.fourth-images-portion .column-1 img{
+float: left;
+margin:0px;
+padding:0px;
+
+}
+.fourth-images-portion .column-2 img{
+	float: left;
+	margin-bottom: 100px;
+	padding:0px;
+}
+
+
+.fifth-portion-what-we-provide{
+	background-color: #423633;
+	height: 2100px;
+	width:1440px;
+}
+
+.fifth-portion-what-we-provide p{
+	color:#ffffff;
+	text-align: center;
+	font-size: 40px;
+	letter-spacing:normal;
+}
+
+
+.what-we-provide-content{
+	margin:50px 170px 100px 210px; 
+	display: flex;
+}
+
+.what-we-provide-content h3{
+	color:#ffffff;
+	text-transform: uppercase;
+	letter-spacing: normal;
+	line-height:1.44;
+	
+}
+
+.what-we-provide-content p{
+	font-size: 16px;
+	color:#ffffff;
+	opacity: 0.5;
+	width:240px;
+	height: 72px;
+	text-align: left;
+}
+
+.what-we-provide-content #column2{
+	margin-left:120px;
+	
+}
+
+.what-we-provide-content #column3{
+	margin-left:120px;
+	
+	
+}
+
+#ninja-light-logo{
+opacity:0.3;
+text-align: center;
+margin-top:110px;
+margin-left: 100px;
 }
 
