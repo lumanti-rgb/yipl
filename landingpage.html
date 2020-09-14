@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
- <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">  -->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<title>Landing Page</title>
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript">
+    
+		function setNewImage()
+		{
+		  document.getElementById("img1").src = "images/img-food-photos-1.png" ;
+		}
+	  
+		function setOldImage()
+		{
+		  document.getElementById("img1").src = "images/img-food-photos-6.png" ;
+		}
+	  
+	  function setNewImage1()
+		{
+		  document.getElementById("img2").src = "images/img-food-photos-5.png" ;
+		}
+	  
+		function setOldImage1()
+		{
+		  document.getElementById("img2").src = "images/img-food-photos-2.png" ;
+		}
+		</script>
 </head>
 
 <body>
 
-<div class="main-landing-page">
+<div class="wrapper">
 	<div class="navbar">
 		<div class="navbar-header">
 			<div class="ninja-logo">
@@ -16,7 +38,7 @@
 			</div>
 		
 				<ul>
-					<li class="active"><a href="index.html">Home</a></li>
+					<li class="active"><a href="landingpage.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
 					<li><a href="work.html">Work</a></li>
 					<li><a href="contact.html">Contact</a></li><img src="images/ic-search.png">
@@ -26,12 +48,12 @@
 		</div>
 
 		<div class="introduction">
-			<h1>Are you a frontend ninja?</h1>
+			<h1> Are you a frontend ninja?</h1>
 			<p>Frontend ninjas are the superheros who bring life into designs. We're looking for frontend ninjas who can link together the world of design and technology, packaging up utility of the back end in an inviting way for users to interact with. Are You One?
 			</p>
 
 			<div>
-				<a href="#" class="button-to-apply">Apply now <img src ="images/ic-arrow.png"></a>
+				<a href="#" class="button-to-apply"><span class="colorchange"> Apply now </span><img src ="images/ic-arrow.png"></a>
 			</div>
 		</div>
 
@@ -111,15 +133,18 @@
 
 	<div class="fourth-images-portion">
 		<div class="column-1">
-			<img src="images/img-food-photos-6.png" alt="Pizza">
-	
+			<img id="img2" onmouseover="setNewImage1()"  onmouseout="setOldImage1()" 
+			src="images/img-food-photos-6.png" alt="Pizza">
+
 			<img src="images/img-food-photos-5.png" alt="Rice">
 		  
 			<img src="images/img-food-photos-4.png" alt="Burger">
+
 		<div class="column-2">
 			 <img src="images/img-food-photos-3.png" alt="Frenchfries"> 
 		  
-			<img src="images/img-food-photos-2.png" alt="Juice"> 
+			<img id="img1" onmouseover="setNewImage()" onmouseout="setOldImage()" 
+			src="images/img-food-photos-2.png" alt="Juice"> 
 		  
 			<img src="images/img-food-photos-1.png" alt="Salad">
 		</div>
@@ -132,7 +157,6 @@
 				<div id="column1">
 					<img src="images/ic-tailored.png"><h3>Tailored objectives</h3>
 					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-					
 					<img src="images/ic-lunch.png"><h3>Delicious lunch</h3>
 					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 
@@ -170,7 +194,7 @@
 			</div>
 
 		<div>
-			<a href="#" class="button-to-apply">Apply now <img src ="images/ic-arrow.png"></a>
+			<a href="#" class="button-to-apply"><span class="colorchange"> Apply now </span><img src ="images/ic-arrow.png"></a>
 		</div>	
 		<div id="ninja-light-logo">
 			
@@ -182,9 +206,8 @@
 
 			<p>© Copyright 2017</p>
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="landingpage.html">Home</a></li>
 				<li><a href="about.html">About</a></li>
-				<li><a href="work.html">Work</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
 			
