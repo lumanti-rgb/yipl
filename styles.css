@@ -3,13 +3,21 @@
 	font-family: century gothic;
 }
 
-
-.main-landing-page{
-	width: 1440px;
-	height: 4352px;
-
-	
+::-webkit-scrollbar{
+	display:none;
 }
+ body{
+	 width: 100%;
+	 overflow-x:hidden;
+	 margin:0;
+ }
+
+.wrapper{
+	width: 1440px; 
+	height: 100vh; 
+	margin:0 auto; 
+	}
+
 
 .navbar{
 	width: 1440px;
@@ -20,25 +28,22 @@
 
 .ninja-logo{
 float: left;
-margin-left: 60px;
-margin-top: 60px;
-
+margin: 70px 0px 0px 60px;
 }
 
 
 .navbar-header{
 	height: 60px;
-	width: 1440px;
+	 width: 1440px; 
 	/*background-color: #344F4B;*/
 }
+
 
 
 .navbar-header ul{
 	list-style: none;
 	float: right;
-	margin-top: 60px;
-	margin-right: 55px;
-
+	margin:70px 100px 0px 0px; 
 	}
 
 
@@ -62,8 +67,7 @@ color:#ffffff;
 }
 
 .navbar-header ul img{
-	margin-top:15px;
-	margin-left: 40px;
+	margin:15px 0px 0px 35px;
 }
 
 .navbar-header ul li.active a{
@@ -82,6 +86,18 @@ background-color:#E9967A;
 	
 }
 
+.colorchange{
+	animation: colorchangefrontend 1s infinite;
+}
+
+@keyframes colorchangefrontend{
+	0%{color:brown;}
+	25%{color:black;}
+	50%{color:white;}
+	100%{color: black;}
+
+}
+
 .introduction p{
 	width: 624px;
   	height: 84px;
@@ -90,22 +106,7 @@ background-color:#E9967A;
   	color:#ffffff;
 
   }
-
-/*@keyframes glowing {
-        0% {
-          background-color: #2ba805;
-          box-shadow: 0 0 5px #2ba805;
-        }
-        50% {
-          background-color: #49e819;
-          box-shadow: 0 0 20px #49e819;
-        }
-        100% {
-          background-color: #2ba805;
-          box-shadow: 0 0 5px #2ba805;
-        }
-      }
-      */
+  
 
 .button-to-apply{
 	width: 192px;
@@ -116,18 +117,17 @@ background-color:#E9967A;
   	text-align: center;
   	border-radius: 4px;
   	box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.9);
-  	text-decoration: none;
+  	text-decoration:none;
   	display: inline-block;
   	font-size: 18px;
   	margin: 50px 611px 0px 637px;
   	cursor: pointer;
-  	text-transform: uppercase;
-  	/*animation: glowing 1300ms infinite;*/
+	text-transform: uppercase;
+	
 }
 
 .button-to-apply img{
-	margin-left: 8px;
-	margin-top: 5px;
+	margin: 5px 0px 0px 8px;
 }
 
 h1.question-like{
@@ -135,14 +135,12 @@ h1.question-like{
 	color:#000;
 	font-size: 40px;
 	letter-spacing: normal;
-	margin-top:80px;
+	margin-top:150px;
 }
 
 .column-img {
   float: left;
-  padding-top: 45px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding : 30px 80px 0px ;
 
 }
 
@@ -173,14 +171,13 @@ h1.question-like{
 
 
 .left-resources h1{
-	margin-left:160px;
+	margin-left:140px;
 
 }
 
 .left-resources ul{
 	float: left;
-	margin-left:100px;
-	margin-top:15px;
+	margin:15px 0px 0px 80px;
 }
 
 .left-resources ul li{
@@ -189,21 +186,17 @@ h1.question-like{
 	color:#0EA007;
 	padding:15px; 
 	
-	
 	}
 
 
 .right-latest-from-frontend h1{
-margin-left:230px;
-margin-bottom: 20px;
+margin:10px 0px 20px 230px;
 	}
 
 
 
 .right-latest-from-frontend ul{
-		/* float:right; */
-		margin-right: 100px;
-		margin-left: 200px;
+	margin:0 100px 0 200px;
 	}
 
 .right-latest-from-frontend ul li{
@@ -215,11 +208,10 @@ margin-bottom: 20px;
 
 .right-latest-from-frontend ul p{
 margin:0px;
-padding-top:3px;
-padding-bottom: 15px;
 color:grey;
 text-transform: uppercase;
 font-size: 13px;
+padding:3px 0px 15px;
 }
 
 .vertical-line {
@@ -243,9 +235,7 @@ font-size: 13px;
 }
 
 .ic-separator-frontend-ninja{
-	 margin-top:550px; 
-	 margin-left:470px; 
-	/* text-align: center; */
+	margin:60px 0px 0px 470px;
 }
 
 
@@ -266,15 +256,13 @@ font-size: 13px;
 
 .ic-separator-frontend-ninja img { 
 	text-align: center;
-	margin-left: 50px;
-	margin-right: 50px;
+	margin:0px 50px;
 }
 
 #heading-like h1{
 	text-align: center;
 	color:#9b9b9b;
-	margin-top:85px;
-	margin-bottom: 0px;
+	margin:85px 0px 0px;
 }
 
 #heading-like p{
@@ -314,7 +302,7 @@ padding:0px;
 
 
 .what-we-provide-content{
-	margin:50px 170px 105px 210px; 
+	margin:70px 180px 105px 210px;
 	display: flex;
 }
 
@@ -323,7 +311,7 @@ padding:0px;
 	text-transform: uppercase;
 	letter-spacing: normal;
 	line-height:1.44;
-	
+
 }
 
 .what-we-provide-content p{
@@ -333,11 +321,12 @@ padding:0px;
 	width:240px;
 	height: 72px;
 	text-align: left;
+
 }
 
 .what-we-provide-content #column2{
 	margin-left:120px;
-	
+
 }
 
 .what-we-provide-content #column3{
@@ -345,12 +334,10 @@ padding:0px;
 	
 }
 
-
 #ninja-light-logo{
 opacity:0.3;
 text-align: center;
-margin-top:110px;
-margin-left: 100px;
+margin:110px 0px 0px 100px;
 }
 
 .footer{
@@ -362,26 +349,109 @@ margin-left: 100px;
 .footer p{
 	float: left;
 	color:#ffffff;
-	margin-top: 40px;
-	margin-left: 60px;
+	margin:40px 0 0 60px;
 }
 
 .footer ul{
 	list-style: none;
 	float: right;
-	margin-top: 42px; 
-	margin-right: 55px;
+	margin:42px 85px 0 0;
 }
 
 .footer ul li{
 	display: inline-block;
+	text-transform: uppercase;
 	
 }
 
 .footer ul li a{
 text-decoration:none;
-	color:#ffffff;
-	font-size: 17px;
-	padding: 5px 20px;
-	transition: 0.6s ease;
+color:#ffffff;
+font-size: 17px;
+padding: 5px 20px;
+transition: 0.6s ease;
+}
+
+
+
+@media (max-width:600px){
+	.ninja-logo{
+		margin-top:70px;
+		margin-left:0px;
+	}
+
+	.introduction h1{
+		margin-top:200px;
+		margin-left:25px;
+		font-size:40px;
+		width: 400px;
+ 		/* height: 96px; */
+		
+	}
+
+	.introduction p{
+		width: 400px;
+		text-align: center;
+		margin-left:30px;
+		
+		  }
+	.navbar-header ul{
+		/* height: 100vh; */
+		width:100px;
+		top:0;
+		right:0;
+		position: absolute; 
+		text-align: left;
+		margin-right:0px;
+	}
+	.navbar-header ul a{
+		display:block;
+	}
+
+	.introduction p{
+	width: 400px;
+	text-align: center;
+	margin-left:30px;
+	
+	  }
+
+	  .button-to-apply{
+		  margin-top:100px;
+		  margin-left:170px;
+		  width: 80px;
+		  height: 20px;
+		  text-align: center;
+		  font-size:12px ;
+	  }
+
+	  .button-to-apply img{
+		margin: 0px 15px 0px 14px;
+		
+	}
+	h1.question-like{
+		font-size: 35px;
+		margin-top:50px;
+		margin-left:50px;
+		float:left;
+	}
+
+	.second-portion .row{
+		/* display:block; */
+		margin-left:10px;
+		margin-right: 900px;
+		
+	}
+
+	.third-portion {
+		margin-top: 60px;
+		font-size: 15px;
+		display:block; 
+		padding-left:10px;
+
+	}
+
+	.vertical-line{
+	display: none;
+			
+}
 }
