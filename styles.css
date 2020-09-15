@@ -6,9 +6,13 @@
 ::-webkit-scrollbar{
 	display:none;
 }
+html{
+	scroll-behavior: smooth;
+}
+
  body{
-	 width: 100%;
-	 overflow-x:hidden;
+	 width: 100%; 
+	 overflow-x:hidden; 
 	 margin:0;
  }
 
@@ -18,9 +22,8 @@
 	margin:0 auto; 
 	}
 
-
+/*navbar section*/
 .navbar{
-	width: 1440px;
 	height: 800px;
 	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("images/hero.png");
 
@@ -130,6 +133,7 @@ background-color:#E9967A;
 	margin: 5px 0px 0px 8px;
 }
 
+/*what should you have section*/
 h1.question-like{
 	text-align: center;
 	color:#000;
@@ -139,18 +143,17 @@ h1.question-like{
 }
 
 .column-img {
-  float: left;
-  padding : 30px 80px 0px ;
+  padding : 30px 60px 0px ; 
+  border: 1px solid brown; 
+  margin:3px 16px;
+  border-radius: 30px;
+  background: #f2f2f2;
 
 }
 
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-  
-  
+.row{
+	display: flex; 
+
 }
 
 .column-img h3{
@@ -163,6 +166,8 @@ h1.question-like{
 	height: 88px;
 	text-align: center;
 }
+
+/*resources and updates section*/
 
  .third-portion{
 	margin-top: 100px;
@@ -234,6 +239,8 @@ padding:3px 0px 15px;
 	opacity: 0.2;
 }
 
+/*ninja logo*/
+
 .ic-separator-frontend-ninja{
 	margin:60px 0px 0px 470px;
 }
@@ -259,6 +266,8 @@ padding:3px 0px 15px;
 	margin:0px 50px;
 }
 
+/*Some random food photos section*/
+
 #heading-like h1{
 	text-align: center;
 	color:#9b9b9b;
@@ -273,7 +282,6 @@ padding:3px 0px 15px;
 	margin-bottom: 30px;
 }
 
-
 .fourth-images-portion .column-1 img{
 float: left;
 margin:0px;
@@ -286,7 +294,7 @@ padding:0px;
 	padding:0px;
 }
 
-
+/*what we provide section */
 .fifth-portion-what-we-provide{
 	background-color: #423633;
 	height: 2100px; 
@@ -340,6 +348,8 @@ text-align: center;
 margin:110px 0px 0px 100px;
 }
 
+/*footer section*/
+
 .footer{
 	width: 1440px;
 	height:95px;
@@ -373,11 +383,10 @@ transition: 0.6s ease;
 }
 
 
-
+/*
 @media (max-width:600px){
 	.ninja-logo{
 		margin-top:70px;
-		margin-left:0px;
 	}
 
 	.introduction h1{
@@ -385,7 +394,7 @@ transition: 0.6s ease;
 		margin-left:25px;
 		font-size:40px;
 		width: 400px;
- 		/* height: 96px; */
+ 		
 		
 	}
 
@@ -396,7 +405,7 @@ transition: 0.6s ease;
 		
 		  }
 	.navbar-header ul{
-		/* height: 100vh; */
+		
 		width:100px;
 		top:0;
 		right:0;
@@ -430,28 +439,33 @@ transition: 0.6s ease;
 	}
 	h1.question-like{
 		font-size: 35px;
-		margin-top:50px;
-		margin-left:50px;
+		margin-top:50px 0 0 50px;
 		float:left;
 	}
 
-	.second-portion .row{
-		/* display:block; */
-		margin-left:10px;
-		margin-right: 900px;
-		
+	.row{
+		flex-direction: column;
+
+	}
+	
+	.column-img{
+		margin-left: 0px;
+		margin-top:100px;
+
 	}
 
 	.third-portion {
 		margin-top: 60px;
 		font-size: 15px;
-		display:block; 
-		padding-left:10px;
-
+		display:flex;
+		flex-direction: column;
+		
 	}
 
 	.vertical-line{
 	display: none;
 			
 }
+
 }
+*/
